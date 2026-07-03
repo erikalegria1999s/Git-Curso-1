@@ -1,10 +1,135 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 :root {
-    --color-claro:#00E5FF;
-    --color-medio:#00B4D8;
-    --color-tecnico:#0077B6;
-    --color-real:#03045E;
-    --color-sombras:#0A192F;
-    --color-fondo:#ffffff;
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --text-color: #c9d1d9;
+    --text-bright: #f0f6fc;
+    --accent-color: #f78166;
+    --border-color: #30363d;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
 
+/*HEADER Y NAVEGACIÓN*/
+.header {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    height: 40px; 
+    display: block;
+}
+
+.nav-links .link {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links .link:hover {
+    color: var(--accent-color);
+}
+
+/* CONTENIDO PRINCIPAL (MAIN) */
+.container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--text-bright);
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    font-weight: 400;
+}
+
+/* LISTA DE PASOS (ESTILO TIMELINE) */
+.git-steps {
+    list-style-position: inside;
+}
+
+.git-steps li {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.git-steps li:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-color);
+}
+
+/* Estilo para los comandos de Git */
+.git-steps strong {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.15rem;
+    color: var(--text-bright);
+    background-color: #21262d;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.git-steps p {
+    font-size: 0.95rem;
+    color: #8b949e;
+    padding-left: 0.5rem;
+}
+
+/* Estilo para etiquetas HTML dentro del texto */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #21262d;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    color: var(--accent-color);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: #8b949e;
 }
