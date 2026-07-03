@@ -1,3 +1,4 @@
+
 :root {
     --color-claro:#00E5FF;
     --color-medio:#00B4D8;
@@ -6,18 +7,4 @@
     --color-sombras:#0A192F;
     --color-fondo:#ffffff;
 
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-    background-color: var(--color-fondo);
-}
-nav{
-    
 }
